@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login & Sign-Up Form</title>
-  <link rel="stylesheet" href="CSS files\stylelog.css">
+  <link rel="stylesheet" href="CSS files/stylelog.css">
+  <link rel="icon" href="images/logo.png">
 </head>
 <body>
   <div class="container">
     <div class="form-container">
-      <!-- Login Form -->
       <form id="login-form" class="form">
         <h2>Login</h2>
         <label for="login-email">Email:</label>
@@ -18,11 +18,10 @@
         <label for="login-password">Password:</label>
         <input type="password" id="login-password" placeholder="Enter your password" required>
         
-        <button type="submit">Login</button>
+        <button type="submit" onclick="window.location.href='index.html'">Login</button>
         <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
       </form>
-
-      <!-- Sign-Up Form -->
+      
       <form id="signup-form" class="form hidden">
         <h2>Sign Up</h2>
         <label for="signup-name">Name:</label>
@@ -34,11 +33,11 @@
         <label for="signup-password">Password:</label>
         <input type="password" id="signup-password" placeholder="Create a password" required>
         
-        <button type="submit">Sign Up</button>
+        <button type="submit" onclick="window.location.href='index.html'">Sign Up</button>
         <p>Already have an account? <a href="#" id="show-login">Login</a></p>
       </form>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="JS files\loginjs.js"></script>
 </body>
 </html>
