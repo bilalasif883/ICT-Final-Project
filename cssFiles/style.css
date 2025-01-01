@@ -37,11 +37,11 @@ body {
 
 .slider-controls {
     position: absolute;
-    top: 100px;
-    width: 100px;
+    top: 40%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    
+    transform: translateY(-50%);
 }
 .slider-controls button {
     background-color: rgba(0, 0, 0, 0.5);
@@ -128,4 +128,3 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
-
