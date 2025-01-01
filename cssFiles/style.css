@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #AFB1E2;
+    background-color: #e5d4d4;
     color: #000000;
 }
 
@@ -11,13 +11,53 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    font-size: 40px;
+    height: 50px;
+    font-size: 25px; /* Reduced for smaller screens */
     color: #000000;
+    padding: 5px;
 }
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+}
+
+.slides img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+.slider-controls button:hover {
+    background-color:#ffc400;
+}
+
 a {
     text-decoration: none;
-    color: #000000;
+    color: #ffc400;
 }
 
 h1, h2, h3 {
@@ -28,11 +68,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: inset 0 0 10px #000000;
-    background: rgba(255, 255, 255, 0.3); 
-    backdrop-filter: blur(10px); 
+    box-shadow:  0 0 7px #000000;
+    background: #4347A3;
+    backdrop-filter: blur(10px);
     color: rgb(0, 0, 0);
-    padding: 20px 40px;
+    padding: 15px 20px; /* Reduced padding for mobile */
 }
 
 .logo {
@@ -41,56 +81,51 @@ header {
 }
 
 .logo-image {
-    width: 100px;
-    height: 100px; 
-    margin-right: 15px;
+    width: 80px; /* Reduced logo size for mobile */
+    height: 80px;
+    margin-right: 10px;
 }
 
 .site-name {
-    font-size: 24px;
-    font: large;
+    font-size: 35px; /* Reduced font size */
     font-weight: bolder;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
-   
-marquee {
-    font-size: 20px;
-    font-weight: bolder;
-    color: #000000;
-    background-color: #AFB1E2;
-    padding: 10px 0;
-    box-shadow: inset 0 0 10px #000000;
-}
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the nav items */
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 10px; /* Reduced margin */
+    margin-right: 10px; /* Added margin-right */
+    margin-bottom: 10px; /* Added margin for spacing between items */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-size: 16px; /* Reduced font size */
 }
 
 nav ul li a:hover {
-    color: #ffc400; 
+    color: #ffc400;
     font-style: italic;
     font-weight: bolder;
     text-shadow: #1e1d1d 0 0 5px;
 }
 
-
 footer {
-    background: rgba(255, 255, 255, 0.3); 
-    backdrop-filter: blur(10px); 
-    box-shadow: inset 0 0 10px #000000;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #000000;
     color: rgb(0, 0, 0);
     padding: 10px 0;
     text-align: center;
 }
+
