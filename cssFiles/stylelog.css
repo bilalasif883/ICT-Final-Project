@@ -14,8 +14,9 @@ body {
   .container {
     width: 450px;
     height: 450px;
-    background: rgba(255, 255, 255, 0.3); 
+    background: #4346a380; 
     backdrop-filter: blur(10px); 
+    border: #000000 1px solid;
     border-radius: 15px; 
     padding: 30px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.502); 
@@ -56,11 +57,14 @@ body {
     border-radius: 9px;
     font-size: 16px;
     box-shadow: #373737 0 0 5px;
+    height: 28px;
   }
   
   button {
     margin-top: 1rem;
+    width: 300px;
     padding: 10px;
+    margin-left: 17%;
     background: #ffffff;
     color: rgb(0, 0, 0);
     border:black;
@@ -97,6 +101,5 @@ body {
     font-weight: bolder;
     text-shadow: #1e1d1d 0 0 5px;
     text-decoration: underline;
-
   }
   

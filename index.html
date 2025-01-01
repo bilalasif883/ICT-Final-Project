@@ -6,7 +6,7 @@
     <title>Quiz Master</title>
     <link rel="stylesheet" href="cssFiles/style.css">
     <link rel="icon" href="images/logo.png">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -25,14 +25,14 @@
         </nav>
     </header>
 
-    <marquee class="Welcome">Welcome to Quiz Master!  .......  The Ultimate Quiz Web on your favourite topics.</marquee>
+    <marquee HSPACE="1" BEHAVIOR="SCROLL" SCROLLAMOUNT="17" SCROLLDELAY="" class="Welcome">Welcome to Quiz Master!  .......  The Ultimate Quiz Web on your favourite topics.</marquee>
 
     <div id="home" class="slider">
         <div class="slides">
-            <img src="images/Didyouknow.png" alt="Slide 1">
-            <img src="images/fact1.png" alt="Slide 2">
-            <img src="images/questionofday.png" alt="Slide 3">
-            <img src="images/intro.png" alt="Slide 4">
+            <img src="images/intro.png" alt="Slide 1">
+            <img src="images/Didyouknow.png" alt="Slide 2">
+            <img src="images/fact1.png" alt="Slide 3">
+            <img src="images/questionofday.png" alt="Slide 4">
         </div>
         <div class="slider-controls">
             <button type="button" class="prev" onclick="prevSlide()">❮</button>
@@ -41,8 +41,15 @@
     </div>
 
     <footer>
+        
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
         <p>&copy; 2024 Quiz Master. All Rights Reserved.</p>
     </footer>
-<script src="jsFiles/Scriptforweb.js"></script>
+
+    <script src="jsFiles/Scriptforweb.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/*Css for Index Html & Basic Structures like header an footer*/
 body {
     font-family: "fantasy";
     margin: 0;
@@ -12,10 +13,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 50px;
-    font-size: 25px; /* Reduced for smaller screens */
+    font-size: 25px;
     color: #000000;
     padding: 5px;
 }
+
 .slider {
     position: relative;
     width: 100%;
@@ -37,22 +39,28 @@ body {
 
 .slider-controls {
     position: absolute;
+
     top: 40%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
 }
+
 .slider-controls button {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.354);
+    border-radius: 100px;
     border: none;
     color: #fff;
     font-size: 18px;
     padding: 10px;
     cursor: pointer;
+    margin: 5px;
 }
+
 .slider-controls button:hover {
-    background-color:#ffc400;
+    background-color: #ffc40069;
+    color: #00000089;
 }
 
 a {
@@ -60,7 +68,9 @@ a {
     color: #ffc400;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
 }
 
@@ -68,11 +78,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow:  0 0 7px #000000;
+    box-shadow: 0 0 7px #000000;
     background: #4347A3;
     backdrop-filter: blur(10px);
     color: rgb(0, 0, 0);
-    padding: 15px 20px; /* Reduced padding for mobile */
+    padding: 10px;
 }
 
 .logo {
@@ -81,13 +91,15 @@ header {
 }
 
 .logo-image {
-    width: 80px; /* Reduced logo size for mobile */
-    height: 80px;
+    width: 100px;
+    height: 100px;
     margin-right: 10px;
+    margin-top: 25px;
 }
 
 .site-name {
-    font-size: 35px; /* Reduced font size */
+    margin-top: 25px;
+    font-size: 45px;
     font-weight: bolder;
     color: rgb(255, 255, 255);
 }
@@ -97,20 +109,20 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center the nav items */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-    margin-left: 10px; /* Reduced margin */
-    margin-right: 10px; /* Added margin-right */
-    margin-bottom: 10px; /* Added margin for spacing between items */
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 0px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 16px; /* Reduced font size */
+    font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -118,13 +130,362 @@ nav ul li a:hover {
     font-style: italic;
     font-weight: bolder;
     text-shadow: #1e1d1d 0 0 5px;
+    font-size: larger;
+}
+
+nav ul li a.current {
+    color: #ffc400;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: #1e1d1d 0 0 5px;
+    font-size: larger;
 }
 
 footer {
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px #000000;
-    color: rgb(0, 0, 0);
-    padding: 10px 0;
+    background-color: #4347A3;
+    color: #fff;
     text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer p {
+    color: #fff;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.social-icon {
+    margin-top: 40px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: .7s;
+}
+
+.social-icon:hover {
+    color: #fcad03;
+    text-shadow:  0 0 10px #00000091;
+    transform: translate3d(10px, -10px, 20px);
+    font-size: 35px;
+}
+
+/*Css for Quiz Page*/
+.featured-quizzes {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.featured-quizzes h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#quizz {
+    color: #000000;
+    font-size: 50px;
+}
+
+.quiz-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.quiz-item {
+    background-color: #4347A3;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.543);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quiz-item:hover {
+    transform: translate3d(10px, -20px, 40px);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.877);
+}
+
+.quiz-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+
+}
+
+.quiz-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #cecbcb;
+}
+
+.quiz-item .start-quiz {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color .4s ease;
+}
+
+.quiz-item .start-quiz:hover {
+    background-color: #ffc400;
+    color: #000000;
+    box-shadow: 0 0 10px #00000091;
+}
+
+#answer {
+    margin: 60px;
+    box-shadow: 0 0 20px #4347A3;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(images/answeroftheday.png);
+    box-shadow: inset 0 0 20px #000000;
+    border: 5px solid #4347A3;
+}
+
+#answer label {
+    top: 50px;
+    margin-left: 80px;
+    color: #000000;
+    font-weight: 800;
+}
+
+#answer input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    width: 40%;
+    background-color: #ffffff6b;
+    color: #000000;
+
+}
+
+#answer button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    width: 130px;
+}
+
+#answer button:hover {
+    background-color: #ffc400;
+    color: #000000;
+    box-shadow: 0 0 10px #00000091;
+}
+
+/*Css for About Page*/
+#about-section {
+    margin: 2em;
+    padding: 2em;
+    background-color: #4347A3;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #fcad03;
+    font-size: 2.0em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #dddddd;
+}
+
+div {
+    margin-bottom: 2em;
+}
+
+#contact {
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form label {
+    margin-top: 0.5em;
+    color: #fff;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 2px solid #E5D4D4;
+    width: 80%;
+    max-width: 400px;
+    background-color: #E5D4D4;
+}
+
+#contact-form button {
+    margin-top: 1em;
+    padding: 0.7em;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+}
+
+#points {
+    font-size: 30px;
+    text-align: center;
+    color: #287517;
+    transition: .4s;
+}
+
+#points:hover {
+    text-decoration: underline;
+    color: #4347A3;
+}
+
+#contact-form button:hover {
+    background-color: #ffc400;
+    color: #000000;
+    box-shadow: 0 0 10px #00000091;
+}
+
+/*Css for Redeem Page */
+.info {
+    font-weight: bolder;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    margin-left: 16%;
+    text-align: center;
+    width: 850px;
+}
+
+p {
+    font-size: 20px;
+    color: #000000;
+}
+
+main {
+    padding: 2em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#redeem {
+    color: #000000 !important;
+    font-size: 50px;
+}
+
+.card {
+    background-color: #4347A3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    top: 0;
+    padding: 1em;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.484);
+    transition: 0.6s;
+}
+
+.card:hover {
+    transform: translate3d(10px, -10px, 40px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.765);
+}
+
+.card img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.card h2 {
+    color: #ffffff;
+    font-size: 1.4em;
+    margin: 0.5em 0;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #d7d4d4;
+}
+
+.redeem-btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: .5s;
+}
+
+.redeem-btn:hover {
+    background-color: #ffc400;
+    color: #000000;
+    box-shadow: 0 0 10px #00000091;
+}
+
+@media screen and (max-width: 600px) {
+    .Welcome {
+        font-size: 20px;
+    }
+
+    .logo-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .site-name {
+        font-size: 15px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+
+    }
+
+    .slider {
+        height: 200px;
+    }
 }

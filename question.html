@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="cssFiles/question.css">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <h1>Quiz Master</h1>
+    <div class="quiz-container">
+        <div class="quiz-selector">
+
+        </div>
+        <div id="general-knowledge" class="quiz-questions">
+            <h3>General Knowledge Quiz</h3>
+            <ul>
+                <li>Q1: Who won the US-2024 Presidential Elections?</li>
+                <label class="option"><input type="radio" name="q1" value="A"> A) Barack Obama</label><br>
+                <label class="option"><input type="radio" name="q1" value="B"> B) Joe Biden</label><br>
+                <label class="option"><input type="radio" name="q1" value="C"> C) Donald Trump</label><br>
+                <label class="option"><input type="radio" name="q1" value="D"> D) Hillary Clinton</label><br>
+                <br>
+                <li>Q2: Which country made the first private jet?</li>
+                <label class="option"><input type="radio" name="q2" value="A"> A) USA</label><br>
+                <label class="option"><input type="radio" name="q2" value="B"> B) Germany</label><br>
+                <label class="option"><input type="radio" name="q2" value="C"> C) France</label><br>
+                <label class="option"><input type="radio" name="q2" value="D"> D) Russia</label><br>
+            </ul>
+            <button id="check" onclick="checkAnswers('general-knowledge')">Submit</button>
+            <a href="quizz.html"><button id="Home" >&#x219A Back</button></a>
+        </div>
+
+        <div id="science" class="quiz-questions">
+            <h3>Science Quiz</h3>
+            <ul>
+                <li>Q1: What is the IUPAC symbol of gold?</li>
+                <label class="option"><input type="radio" name="science-q1" value="A"> A) Ag</label><br>
+                <label class="option"><input type="radio" name="science-q1" value="B"> B) Fe</label><br>
+                <label class="option"><input type="radio" name="science-q1" value="C"> C) Au</label><br>
+                <label class="option"><input type="radio" name="science-q1" value="D"> D) Li</label><br>
+                <br>
+                <li>Q2: What is the nature of light?</li>
+                <label class="option"><input type="radio" name="science-q2" value="A"> A) Particle</label><br>
+                <label class="option"><input type="radio" name="science-q2" value="B"> B) Dual</label><br>
+                <label class="option"><input type="radio" name="science-q2" value="C"> C) None</label><br>
+                <label class="option"><input type="radio" name="science-q2" value="D"> D) Both</label><br>
+            </ul>
+            <button id="check" onclick="checkAnswers('science')">Submit</button>
+            <a href="quizz.html"><button id="Home" >&#x219A Back</button></a>
+        </div>
+
+        <div id="computer-science" class="quiz-questions">
+            <h3>Computer Science Quiz</h3>
+            <ul>
+                <li>Q1: Which of the following is a programming language?</li>
+                <label class="option"><input type="radio" name="cs-q1" value="A"> A) HTML</label><br>
+                <label class="option"><input type="radio" name="cs-q1" value="B"> B) CSS</label><br>
+                <label class="option"><input type="radio" name="cs-q1" value="C"> C) Python</label><br>
+                <label class="option"><input type="radio" name="cs-q1" value="D"> D) SQL</label><br>
+                <br>
+                <li>Q2: What is the main function of an operating system?</li>
+                <label class="option"><input type="radio" name="cs-q2" value="A"> A) Data storage</label><br>
+                <label class="option"><input type="radio" name="cs-q2" value="B"> B) Web browsing</label><br>
+                <label class="option"><input type="radio" name="cs-q2" value="C"> C) Managing computer hardware and
+                    software resources</label><br>
+                <label class="option"><input type="radio" name="cs-q2" value="D"> D) Editing documents</label><br>
+            </ul>
+            <button id="check" onclick="checkAnswers('computer-science')">Submit</button>
+            <a href="quizz.html"><button id="Home" >&#x219A Back</button></a>
+        </div>
+    </div>
+    <footer>     
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Quiz Master. All Rights Reserved.</p>
+    </footer>
+    <script src="jsFiles/question.js"></script>
+</body>
+
+</html>
