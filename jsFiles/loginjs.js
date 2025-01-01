@@ -17,19 +17,19 @@ showLogin.addEventListener('click', (e) => {
 
 const users = [];
 
-// Signup function
-document.getElementById('signup-form').querySelector('form').addEventListener('submit', function(event) {
+// Signup Form Submission
+signupForm.addEventListener('submit', function (event) {
   event.preventDefault();
   let name = document.getElementById('signup-name').value;
   let email = document.getElementById('signup-email').value;
   let password = document.getElementById('signup-password').value;
 
-  // Store user data in the array
+  // Add the new user to the users array
   users.push({ name, email, password });
 
   alert('Signup successful! You can now login.');
 
-  // Clear the form fields
+  // Clear form fields
   document.getElementById('signup-name').value = '';
   document.getElementById('signup-email').value = '';
   document.getElementById('signup-password').value = '';
@@ -39,18 +39,20 @@ document.getElementById('signup-form').querySelector('form').addEventListener('s
   loginForm.classList.remove('hidden');
 });
 
-const testmail = "testuser@gmail.com";
-const testpassword = "123456789";
-
-document.getElementById('login-form').querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault(); 
+let testmail = 'email@gmail.com';
+let testpassword = '241914';
+// Login Form Submission
+loginForm.addEventListener('submit', function (event) {
+  event.preventDefault();
   let email = document.getElementById('login-email').value;
   let password = document.getElementById('login-password').value;
 
+  // Find the user in the array
   const user = users.find(user => user.email === email && user.password === password);
 
+  // Check against test credentials or users array
   if ((email === testmail && password === testpassword) || user) {
-    window.location.href = 'Main/index.html';  // Use forward slashes for the file path
+    location.replace('index.html'); // Navigate to index.html
   } else {
     alert('Email or Password is not correct');
   }
