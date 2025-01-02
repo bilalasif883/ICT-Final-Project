@@ -14,8 +14,6 @@ function showQuiz() {
             quiz.style.display = 'none';
         }
     });
-
-
     showTotalPoints();
 }
 
