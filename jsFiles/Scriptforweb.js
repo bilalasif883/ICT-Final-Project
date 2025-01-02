@@ -20,3 +20,4 @@ function prevSlide() {
 setInterval(nextSlide, 7000);
 
 document.addEventListener('DOMContentLoaded', showSlides);
+

@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #e5d4d4;
+    background-color: #ffffff;
     color: #000000;
 }
 
@@ -16,28 +16,13 @@ body {
     font-size: 25px;
     color: #000000;
     padding: 5px;
+    box-shadow: inset 0 0 20px 5px #00000089;
 }
 
 ::-webkit-scrollbar {
-    width: 18px;
-
-}               
-
-::-webkit-scrollbar-thumb {
-    background-color: #ffffff00;
-    border-radius: 9px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #fcad03c4;
-    border-radius: 9px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-}
-
-::-webkit-scrollbar-track{
     display: none;
-}
 
+}
 
 .slider {
     position: relative;
@@ -56,14 +41,11 @@ body {
     min-width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
-    margin-left: 5px;
-    margin-right: 10px;
+    box-shadow: 0 44px 40px #00000089;
 }
 
 .slider-controls {
     position: absolute;
-
     top: 40%;
     width: 100%;
     display: flex;
@@ -72,19 +54,22 @@ body {
 }
 
 .slider-controls button {
-    background-color: rgba(0, 0, 0, 0.354);
-    border-radius: 100px;
+    background-color: #28751779;
+    border-radius: 10px;
     border: none;
-    color: #fff;
+    color: #000000;
     font-size: 18px;
     padding: 10px;
     cursor: pointer;
     margin: 5px;
+    transition: .4s ease-in-out;
 }
 
 .slider-controls button:hover {
-    background-color: #ffc40069;
+    background-color: #3dc41f;
     color: #00000089;
+    font-size: 25px;
+    border-radius: 20px;
 }
 
 a {
@@ -102,11 +87,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 7px #000000;
-    background: #4347A3;
-    backdrop-filter: blur(10px);
-    color: rgb(0, 0, 0);
+    box-shadow: 0 0 17px #020202;
+    background: black;
 
+    color: rgb(255, 255, 255);
+    height: 130px;
 }
 
 .logo {
@@ -115,16 +100,15 @@ header {
 }
 
 .logo-image {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     margin-right: 20px;
     margin-left: 30px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .site-name {
-    margin-top: 20px;
-
+    margin-top: 30px;
     font-size: 40px;
     font-weight: bolder;
     color: rgb(255, 255, 255);
@@ -141,34 +125,26 @@ nav ul {
 
 nav ul li {
     margin-left: 14px;
-    margin-right: 14px;
-    margin-bottom: 0px;
+    margin-right: 20px;
+    font-style: italic;
 }
 
 nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 22px;
+    transition: .7s;
 }
 
 nav ul li a:hover {
-    color: #ffc400;
+    color: #3dc41f;
     font-style: italic;
     font-weight: bolder;
-    text-shadow: #1e1d1d 0 0 5px;
-    font-size: larger;
-}
-
-nav ul li a.current {
-    color: #ffc400;
-    font-style: italic;
-    font-weight: bolder;
-    text-shadow: #1e1d1d 0 0 5px;
-    font-size: larger;
+    font-size: 30px;
 }
 
 footer {
-    background-color: #4347A3;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -195,8 +171,8 @@ footer p {
 }
 
 .social-icon:hover {
-    color: #fcad03;
-    text-shadow: 0 0 10px #00000091;
+    color: #3dc41f;
+    text-shadow: 0 3px 10px #fffbfbe3;
     transform: translate3d(10px, -10px, 20px);
     font-size: 35px;
 }
@@ -226,18 +202,18 @@ footer p {
 }
 
 .quiz-item {
-    background-color: #4347A3;
+    background-color: #000000;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.543);
     padding: 20px;
     text-align: center;
     width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
 .quiz-item:hover {
     transform: translate3d(10px, -20px, 40px);
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.877);
+    box-shadow: 2px 25px 30px #3dc41fa0;
 }
 
 .quiz-item h3 {
@@ -255,34 +231,35 @@ footer p {
 
 .quiz-item .start-quiz {
     display: inline-block;
-    background-color: #000000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color .4s ease;
+    transition: .4s ease all;
 }
 
 .quiz-item .start-quiz:hover {
-    background-color: #ffc400;
+    background-color: #3dc41f;
     color: #000000;
     box-shadow: 0 0 10px #00000091;
 }
 
 #answer {
     margin: 60px;
-    box-shadow: 0 0 20px #4347A3;
+    box-shadow: 0 0 20px #000000;
     padding: 30px;
     border-radius: 10px;
     background-image: url(images/answeroftheday.png);
-    box-shadow: inset 0 0 20px #000000;
-    border: 5px solid #4347A3;
+    background-size: cover;
+    box-shadow: 0 16px 16px #0000009c;
+    border: 2px solid #000000;
 }
 
 #answer label {
     top: 50px;
-    margin-left: 80px;
+    margin-left: 60px;
     color: #000000;
     font-weight: 800;
 }
@@ -307,36 +284,40 @@ footer p {
     color: #fff;
     cursor: pointer;
     width: 130px;
+    transition: .4s ease-in-out;
 }
 
 #answer button:hover {
-    background-color: #ffc400;
+    background-color: #3dc41f;
     color: #000000;
-    box-shadow: 0 0 10px #00000091;
+    box-shadow: 0 0 4px #00000091;
 }
 
 /*Css for About Page*/
 #about-section {
     margin: 2em;
     padding: 2em;
-    background-color: #4347A3;
-    border-radius: 8px;
+    background-color: #000000;
+    border-radius: 40px;
     border: 1px solid;
 }
 
 h1 {
+    text-align: center;
     color: white;
 }
 
 h2 {
-    color: #fcad03;
+    text-align: center;
+
+    color: #ffffff;
     font-size: 2.0em;
 }
 
 p {
     font-size: 1.2em;
     line-height: 1.6em;
-    color: #dddddd;
+    color: #ffffff !important;
 }
 
 div {
@@ -357,7 +338,7 @@ div {
 
 #contact-form label {
     margin-top: 0.5em;
-    color: #fff;
+    color: #ffffff;
 }
 
 #contact-form input,
@@ -366,49 +347,53 @@ div {
     margin-top: 0.5em;
     font-size: 1em;
     border-radius: 4px;
-    border: 2px solid #E5D4D4;
+    border: 2px solid #ffffff;
     width: 80%;
     max-width: 400px;
-    background-color: #E5D4D4;
+    background-color: #ffffff;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.715);
+    opacity: 1;
 }
 
 #contact-form button {
-    margin-top: 1em;
+    margin-top: 2rem;
     padding: 0.7em;
-    background-color: #000000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    width: 100%;
+    width: 35%;
     max-width: 200px;
-    transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 #points {
     font-size: 30px;
     text-align: center;
-    color: #287517;
-    transition: .4s;
-}
-
-#points:hover {
-    text-decoration: underline;
-    color: #4347A3;
+    color: #3dc41f;
+    transition: .4s ease-in-out;
 }
 
 #contact-form button:hover {
-    background-color: #ffc400;
-    color: #000000;
-    box-shadow: 0 0 10px #00000091;
+    background-color: #3dc41f;
+    color: #ffffff;
+    box-shadow: 0 0 5px #ffffff;
 }
 
 /*Css for Redeem Page */
 .info {
     font-weight: bolder;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    margin-left: 16%;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     width: 850px;
 }
@@ -429,12 +414,12 @@ main {
 }
 
 #redeem {
-    color: #000000 !important;
+    color: #ffffff !important;
     font-size: 50px;
 }
 
 .card {
-    background-color: #4347A3;
+    background-color: #000000;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1em;
@@ -457,6 +442,7 @@ main {
     border-radius: 8px;
     max-width: 100%;
     height: auto;
+    border: #3dc41f solid 2px;
 
 }
 
@@ -472,8 +458,8 @@ main {
 }
 
 .redeem-btn {
-    background-color: #000000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     border-radius: 4px;
     padding: 0.7em 1.2em;
@@ -483,23 +469,18 @@ main {
 }
 
 .redeem-btn:hover {
-    background-color: #ffc400;
+    background-color: #3dc41f;
     color: #000000;
     box-shadow: 0 0 10px #00000091;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575px) {
     .Welcome {
         font-size: 20px;
     }
 
-    .logo-image {
-        width: 40px;
-        height: 40px;
-    }
-
     .site-name {
-        font-size: 15px;
+        font-size: auto;
     }
 
     nav ul li {
@@ -507,12 +488,40 @@ main {
         margin-right: 10px;
     }
 
-    nav ul li a {
-        font-size: 10px;
+    .hamburger {
+        display: block;
+    }
 
+    nav ul li a {
+        display: grid;
+        grid: 1fr / 1fr;
+        font-size: 18px;
     }
 
     .slider {
         height: 200px;
+    }
+
+    .info {
+        width: auto;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #answer {
+        margin: 10px;
+        height: auto;
+    }
+    #answer label{
+        font-size: 15px;
+    }
+    #answer button{
+        width: 100px;
+    }
+    #answer input{
+        margin-left: 30px;
+        width: 180px;
     }
 }

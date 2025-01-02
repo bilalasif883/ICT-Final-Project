@@ -1,105 +1,152 @@
 body {
-    font-family: "fantasy";
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #030303;
-    background-image: url(images/quiz\ backgroun.jpg);
-    background-size: cover;
-  }
+  font-family: "fantasy";
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/login.png);
+  background-size: cover;
+}
 
-  .container {
-    width: 450px;
-    height: 450px;
-    background: #4346a380; 
-    backdrop-filter: blur(10px); 
-    border: #000000 1px solid;
-    border-radius: 15px; 
-    padding: 30px;
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.502); 
-  }
-  
-  .form-container {
-    display: flex;
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
+
+.container {
+  width: 450px;
+  height: auto;
+  background-color: #0000000f;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  border: rgba(0, 0, 0, 0.313) solid 1px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.502);
+}
+
+.form-container {
+  display: flex;
   flex-direction: column;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  h2 {
-    margin-bottom: 10px;
-    text-align: center;
-    color: #000000;
-  }
-  
-  label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  input {
-    margin-bottom: 1rem;
-    padding: 10px;
-    background-color: #ffffff;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 9px;
-    font-size: 16px;
-    box-shadow: #373737 0 0 5px;
-    height: 28px;
-  }
-  
-  button {
-    margin-top: 1rem;
-    width: 300px;
-    padding: 10px;
-    margin-left: 17%;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-    border:black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 9px;
-    font-size: 16px;
-    box-shadow: #464646 0 0 5px;
-    font-weight: bolder;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #ffc400;
-    box-shadow: #030303 0 3px 10px;
-    border-radius: 10px;
-    border: none;
-  }
-  
-  p {
-    text-align: center;
-    margin-top: 13px;
-    color: #000000;
-  }
-  
-  a {
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #ffc400; 
-    font-size: large;
-    font-weight: bolder;
-    text-shadow: #1e1d1d 0 0 5px;
-    text-decoration: underline;
-  }
-  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.534);
+  opacity: 1;
+  /* Firefox */
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 10px;
+  background-color: #ffffff00;
+  border: rgba(0, 0, 0, 0.418);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 9px;
+  font-size: 16px;
+  box-shadow: #00000089 0 0 2px;
+  height: 28px;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #171717;
+  padding: 13px;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 32%;
+  margin-left: 33%;
+}
+
+button span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #6A8D49;
+  border-radius: 50%;
+  transition: .6s ease;
+}
+
+button:hover {
+  box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
+}
+
+button span:nth-child(6) {
+  position: relative;
+}
+
+button span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+button span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+button span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+button span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+button span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+button:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+p {
+  text-align: center;
+  margin-top: 13px;
+  color: #000000;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: .4s ease;
+}
+
+a:hover {
+  color: #437811;
+  font-size: large;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-shadow: 0 0 .4px #ffffff;
+}

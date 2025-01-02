@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,53 @@
   <link rel="stylesheet" href="cssFiles/stylelog.css">
   <link rel="icon" href="images/logo.png">
 </head>
+
 <body>
   <div class="container">
     <div class="form-container">
       <form id="login-form" class="form">
-        <h2>Login</h2>
+        <h2>Quiz Master</h2>
         <label for="login-email">Email:</label>
         <input type="email" id="login-email" placeholder="Enter your email" required>
-        
+
         <label for="login-password">Password:</label>
         <input type="password" id="login-password" placeholder="Enter your password" required>
-        
-        <button type="submit" id="Login" onclick="LoginFun()">Login</button>
+
+        <button id="submit" onclick="LoginFun()">
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span type="button">Login</span>
+        </button>
         <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
       </form>
-      
+
       <form id="signup-form" class="form hidden">
-        <h2>Sign Up</h2>
+        <h2>Quiz Master</h2>
         <label for="signup-name">Name:</label>
         <input type="text" id="signup-name" placeholder="Enter your name" required>
-        
+
         <label for="signup-email">Email:</label>
         <input type="email" id="signup-email" placeholder="Enter your email" required>
-        
+
         <label for="signup-password">Password:</label>
         <input type="password" id="signup-password" placeholder="Create a password" required>
-        
-        <button type="submit">Sign Up</button>
+
+        <button id="submit">
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span type="button">SignUp</span>
+        </button>
         <p>Already have an account? <a href="#" id="show-login">Login</a></p>
       </form>
     </div>
   </div>
   <script src="jsFiles/loginjs.js"></script>
 </body>
+
 </html>
