@@ -1,3 +1,8 @@
+:root{
+  --primary-color:#ffffff;
+  --Secondry-color:#1F2020;
+  --tertiary-color:#3dc41f;
+  }
 body {
   font-family: "fantasy";
   margin: 0;
@@ -15,14 +20,14 @@ input:-webkit-autofill {
 }
 
 .container {
-  width: 450px;
+  width: 440px;
   height: auto;
-  background-color: #0000000f;
+  background-color: #00000000;
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 30px;
   border: rgba(0, 0, 0, 0.313) solid 1px;
-  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.502);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.368);
 }
 
 .form-container {
@@ -74,8 +79,8 @@ input {
 button {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: white;
-  background-color: #171717;
+  color: var(--primary-color);
+  background-color: var(--Secondry-color);
   padding: 13px;
   border: none;
   border-radius: .6rem;
@@ -93,7 +98,7 @@ button span:not(:nth-child(6)) {
   transform: translate(-50%, -50%);
   height: 30px;
   width: 30px;
-  background-color: #6A8D49;
+  background-color: var(--tertiary-color);
   border-radius: 50%;
   transition: .6s ease;
 }
@@ -144,9 +149,9 @@ a {
 }
 
 a:hover {
-  color: #437811;
+  color: var(--tertiary-color);
   font-size: large;
   font-weight: bolder;
   text-decoration: underline;
-  text-shadow: 0 0 .4px #ffffff;
+  text-shadow: 0 2px .8px #000000;
 }

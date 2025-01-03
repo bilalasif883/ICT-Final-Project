@@ -1,10 +1,15 @@
 /*Css for Index Html & Basic Structures like header an footer*/
+:root{
+--primary-color:#ffffff;
+--Secondry-color:#1F2020;
+--tertiary-color:#3dc41f;
+}
 body {
     font-family: "fantasy";
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #ffffff;
+    background-color:var(--primary-color);
     color: #000000;
 }
 
@@ -66,7 +71,7 @@ body {
 }
 
 .slider-controls button:hover {
-    background-color: #3dc41f;
+    background-color: var(--tertiary-color);
     color: #00000089;
     font-size: 25px;
     border-radius: 20px;
@@ -74,7 +79,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #ffc400;
+    color:var(--tertiary-color);
 }
 
 h1,
@@ -88,8 +93,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 17px #020202;
-    background: black;
-
+    background-color: var(--Secondry-color);
     color: rgb(255, 255, 255);
     height: 130px;
 }
@@ -137,15 +141,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #3dc41f;
+    color: var(--tertiary-color);
     font-style: italic;
     font-weight: bolder;
     font-size: 30px;
 }
 
 footer {
-    background-color: #000000;
-    color: #fff;
+    background-color: var(--Secondry-color);
+    color: var(--primary-color);
     text-align: center;
     padding: 10px 0;
     width: 100%;
@@ -158,23 +162,23 @@ footer p {
 .social-media {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
 
 }
 
 .social-icon {
     margin-top: 40px;
-    color: white;
-    font-size: 30px;
+    color: var(--primary-color);
+    font-size: 35px;
     text-decoration: none;
-    transition: .7s;
+    transition: .5s;
 }
 
 .social-icon:hover {
-    color: #3dc41f;
-    text-shadow: 0 3px 10px #fffbfbe3;
+    color: var(--tertiary-color);
+    text-shadow: 0 7px 10px #fffbfb40;
     transform: translate3d(10px, -10px, 20px);
-    font-size: 35px;
+    font-size: 45px;
 }
 
 /*Css for Quiz Page*/
@@ -190,7 +194,7 @@ footer p {
 }
 
 #quizz {
-    color: #000000;
+    color: var(--Secondry-color);
     font-size: 50px;
 }
 
@@ -202,18 +206,18 @@ footer p {
 }
 
 .quiz-item {
-    background-color: #000000;
+    background-color: var(--Secondry-color);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.543);
     padding: 20px;
     text-align: center;
     width: 300px;
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.4s ease-in-out;
 }
 
 .quiz-item:hover {
     transform: translate3d(10px, -20px, 40px);
-    box-shadow: 2px 25px 30px #3dc41fa0;
+    box-shadow: 2px 18px 30px var(--Secondry-color);
 }
 
 .quiz-item h3 {
@@ -241,7 +245,7 @@ footer p {
 }
 
 .quiz-item .start-quiz:hover {
-    background-color: #3dc41f;
+    background-color: var(--tertiary-color);
     color: #000000;
     box-shadow: 0 0 10px #00000091;
 }
@@ -280,7 +284,7 @@ footer p {
     margin: 10px;
     border-radius: 5px;
     border: 1px solid #000000;
-    background-color: #000000;
+    background-color: var(--Secondry-color);
     color: #fff;
     cursor: pointer;
     width: 130px;
@@ -288,7 +292,7 @@ footer p {
 }
 
 #answer button:hover {
-    background-color: #3dc41f;
+    background-color: var(--tertiary-color);
     color: #000000;
     box-shadow: 0 0 4px #00000091;
 }
@@ -297,7 +301,7 @@ footer p {
 #about-section {
     margin: 2em;
     padding: 2em;
-    background-color: #000000;
+    background-color: var(--Secondry-color);
     border-radius: 40px;
     border: 1px solid;
 }
@@ -309,7 +313,6 @@ h1 {
 
 h2 {
     text-align: center;
-
     color: #ffffff;
     font-size: 2.0em;
 }
@@ -347,10 +350,10 @@ div {
     margin-top: 0.5em;
     font-size: 1em;
     border-radius: 4px;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--primary-color);
     width: 80%;
     max-width: 400px;
-    background-color: #ffffff;
+    background-color: var(--primary-color);
 }
 
 ::placeholder {
@@ -361,7 +364,7 @@ div {
 #contact-form button {
     margin-top: 2rem;
     padding: 0.7em;
-    background-color: #ffffff;
+    background-color: var(--primary-color);
     color: #000000;
     border: none;
     border-radius: 8px;
@@ -374,14 +377,13 @@ div {
 #points {
     font-size: 30px;
     text-align: center;
-    color: #3dc41f;
+    color: var(--tertiary-color);
     transition: .4s ease-in-out;
 }
 
 #contact-form button:hover {
-    background-color: #3dc41f;
-    color: #ffffff;
-    box-shadow: 0 0 5px #ffffff;
+    background-color: var(--tertiary-color);
+    color: #000000;
 }
 
 /*Css for Redeem Page */
@@ -390,7 +392,7 @@ div {
     padding: 40px;
     margin-top: 20px;
     border-radius: 10px;
-    background-color: #000000;
+    background-color: var(--Secondry-color);
     color: rgb(255, 255, 255);
     margin-left: auto;
     margin-right: auto;
@@ -419,7 +421,7 @@ main {
 }
 
 .card {
-    background-color: #000000;
+    background-color: var(--Secondry-color);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 1em;
@@ -442,7 +444,7 @@ main {
     border-radius: 8px;
     max-width: 100%;
     height: auto;
-    border: #3dc41f solid 2px;
+    border: var(--tertiary-color) solid 2px;
 
 }
 
@@ -458,7 +460,7 @@ main {
 }
 
 .redeem-btn {
-    background-color: #ffffff;
+    background-color: var(--primary-color);
     color: #000000;
     border: none;
     border-radius: 4px;
@@ -469,7 +471,7 @@ main {
 }
 
 .redeem-btn:hover {
-    background-color: #3dc41f;
+    background-color: var(--tertiary-color);
     color: #000000;
     box-shadow: 0 0 10px #00000091;
 }

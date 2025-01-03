@@ -1,3 +1,8 @@
+:root{
+    --primary-color:#ffffff;
+    --Secondry-color:#1F2020;
+    --tertiary-color:#3dc41f;
+    }
 body {
     font-family: "fantasy";
     margin: 20px;
@@ -19,29 +24,28 @@ footer p {
 .social-media {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
 
 }
 
 .social-icon {
     margin-top: 40px;
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 35px;
     text-decoration: none;
-    transition: .7s;
+    transition: .5s;
 }
 
 .social-icon:hover {
-    color: #3dc41f;
-    text-shadow: 0 0 10px #00000077;
+    color: var(--tertiary-color);
+    text-shadow: 0 6px 10px #00000056;
     transform: translate3d(10px, -10px, 20px);
-    font-size: 35px;
+    font-size: 45px;
 }
 
 h1 {
     text-align: center;
-    color: #3dc41f;
-    text-shadow: #000000 0 0 10px;
+    color: var(--Secondry-color);
 }
 
 h3 {
@@ -65,12 +69,12 @@ h3 {
     max-width: 600px;
     height: auto;
     margin: auto;
-    background: #00000054;
+    background-color: #00000031;
     backdrop-filter: blur(10px);
     padding: 20px;
     border: solid .5px #0000007b;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.573);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.573);
 }
 
 .quiz-questions {
@@ -81,7 +85,7 @@ h3 {
 }
 
 input[type="radio"] {
-    accent-color: rgb(49, 181, 29);
+    accent-color: var(--tertiary-color);
 }
 
 .quiz-questions h3 {
@@ -117,7 +121,7 @@ button {
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: var(--primary-color);
     color: #000000;
     border: none;
     border-radius: 4px;
@@ -129,7 +133,7 @@ button {
 }
 
 button:hover {
-    background-color: #308f1a;
+    background-color: var(--tertiary-color);
     color: #000000;
     box-shadow: 0 0 10px #00000091;
     transform: translateY(-0.33em);
