@@ -68,7 +68,7 @@ function checkIfCanRedeem(prizeId) {
 
 
     if (totalPoints >= prizePoints) {
-        alert(`Congratulations! You can redeem this prize.`);
+        alert(`Congratulations! You redeemed the prize.`);
 
         totalPoints -= prizePoints;
         localStorage.setItem('totalPoints', totalPoints);
@@ -81,7 +81,14 @@ function checkIfCanRedeem(prizeId) {
 
 document.getElementById('redeem-prize1').addEventListener('click', () => checkIfCanRedeem('prize1'));
 document.getElementById('redeem-prize2').addEventListener('click', () => checkIfCanRedeem('prize2'));
-
+document.getElementById('redeem-prize3').addEventListener('click', () => checkIfCanRedeem('prize3'));
+document.getElementById('redeem-prize4').addEventListener('click', () => checkIfCanRedeem('prize4'));
+document.getElementById('redeem-prize5').addEventListener('click', () => checkIfCanRedeem('prize5'));
+document.getElementById('redeem-prize6').addEventListener('click', () => checkIfCanRedeem('prize6'));
+document.getElementById('redeem-prize7').addEventListener('click', () => checkIfCanRedeem('prize7'));
+document.getElementById('redeem-prize8').addEventListener('click', () => checkIfCanRedeem('prize8'));
+document.getElementById('redeem-prize9').addEventListener('click', () => checkIfCanRedeem('prize9'));
+document.getElementById('redeem-prize10').addEventListener('click', () => checkIfCanRedeem('prize210'));
 
 
 function checkAnswerAndAddPoints() {

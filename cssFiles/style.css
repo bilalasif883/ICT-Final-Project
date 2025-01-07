@@ -4,6 +4,7 @@
 --Secondry-color:#1F2020;
 --tertiary-color:#3dc41f;
 }
+
 body {
     font-family: "fantasy";
     margin: 0;
@@ -11,6 +12,16 @@ body {
     height: 100%;
     background-color:var(--primary-color);
     color: #000000;
+}
+
+html, body {
+    cursor: url('images/cursor-default.png'), auto;
+   
+}
+
+a, button {
+    
+    cursor: url('images/cursor-pointer.png'), pointer;
 }
 
 .Welcome {
